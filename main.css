@@ -7,53 +7,71 @@ body {
     background-color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;   
     display: block;
+    max-width: 1920px;
 }
 
 header {
-    width: 100%;
+    width: 100%;    
     height: 102px;
     background-color: #040404;
     display: flex;
 }
-.text {
+.text1:hover {
+    transition: all 0.6s ease;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.picture {
     background-size:cover; 
-    position: relative;
-    height: 800px; 
+    height: 800px;
+    position: relative; 
     background-image: url("./img/Sydney+Opera+House.jpg");  
     background-repeat: no-repeat;
 }
 
 .logo-part {
-    margin-left: 13%;
-    width: 15%;
+    text-align: center;
+    width: 35%;
+}
+.logo:hover {
+    transition: all 0.6s ease;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .logo {
-    margin-top: 10px;
-    width: 150px;
-    height: 80px;
+    margin-top: 17px;
+    width: 120px;
+    height: 60px;
 }
 
 .nav {
-    width: 85%;
-    text-align: center;   
-    margin-top: 55px; 
+    width: 65%;
+    text-align: center;  
+    margin-top: 45px;
 }
 
-.navi {
+.nav_item:hover {
+    transition: all 0.6s ease;
+    scroll-behavior: smooth;
+    background:#7A9DB1;
+}
+.nav_item {
     font-family: 'Times New Roman';
     font-size: 18px;
     color:white;
     margin-right: 8%;
+    text-decoration: none;
 }
-
-#text1 {
+.text1 {
     width: 358px;
     height: 252px;
     font-family: 'Pacifico', cursive;
     font-size: 40px;
     color: white;
-    padding-top: 100px;
-    padding-left: 100px;
+    padding-top: 7%;
+    padding-left: 7%;
 }
 .places {
     width: 100%;
@@ -62,7 +80,7 @@ header {
     text-align: center;
     padding-top: 30px;
 }
-#text2 {
+.text2 {
     color: white;
     font-size: 36px;
     font-family: 'Poppins',sans-serif;
@@ -70,18 +88,23 @@ header {
 
 .places2 {
     width: 100%;
-    height: 380px;
     margin-top: 30px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .content {
-    margin: 0 1.5% 0 1.5%;
+    margin: 3%;
     text-align: center;
     width: 408px;
     height: 333px;
 }
-
+.content:hover {
+    transition: all 0.6s ease;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
 .image {
     width: 408px;
     height: 300px;
@@ -91,36 +114,97 @@ header {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    text-decoration: none;
 }
 
 footer {
     width: 100%;
-    height: 70px;
+    height: 100px;
     background-color: #040404;
     display: flex;
 }
 .text4 {
-    margin-left: 10%;
-    margin-top: 28px;
-    margin-right: 25px;
+    margin-top: 38px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    text-align: center;
 }
+
 .socials {
-    margin-top: 10px;
-    width: 158px;
+    margin-top: 23px;
+    margin-left: 10px;
 }
+
 .social-logo {
     margin: 10px;
     width: 30px;
     height: 30px;
 }
+
+.left-part-footer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.right-part-footer {
+    width:50%;
+}
+
 .text5 {
-    text-align: right;
-    width:60%;
-    margin-top: 28px;
+    text-align: center;
+    margin-top: 38px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+}
+
+@media (max-width:900px) {
+    .nav {
+        display: none;
+    }
+    header {
+        height: 70px;
+        background-color: #2F687A;
+    }
+    .logo {
+        margin-top: 12px;
+        width: 90px;
+        height: 45px;
+    }
+    .left-part-footer {
+        width: 50%;
+        display: block;
+        text-align: center;
+        margin: 10px;
+    }
+    .text4 {
+        font-size: 14px;
+    }
+    .socials {
+        margin: 0;
+    }
+    .social-logo {
+        width: 25px;
+        height: 25px;
+    }
+    .text5 {
+        margin-top: 25px;
+        margin-right: 7px;
+        font-size: 13px;
+    }
+    .text1 {
+        font-size: 28px;
+    }
+    .places {
+        padding-top: 10px;
+        height: 60px;
+    }
+    .picture {
+        height: 400px;
+    }
+    .text2 {
+        font-size: 30px;
+    }
 }
