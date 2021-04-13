@@ -16,6 +16,10 @@ header {
     background-color: #040404;
     display: flex;
 }
+.header-menu {
+    display: none;
+}
+
 .text1:hover {
     transition: all 0.6s ease;
     -webkit-transform: scale(1.2);
@@ -29,7 +33,6 @@ header {
     background-image: url("./img/Sydney+Opera+House.jpg");  
     background-repeat: no-repeat;
 }
-
 .picture_facts {
     background-size:cover; 
     height: 700px;
@@ -353,6 +356,53 @@ h3 {
     .image3_facts img {
         width: 95%;
     }
+    .dropdown-child {
+        width: 140px;
+        height: 210px;
+        display: none;
+        position: fixed;
+        right: 0.5px;
+        top: 1px;
+        background-color: #fff;
+        z-index: 999999;
+        border-radius: 5px;
+        padding: 10px 30px 10px 30px;
+    }
+    
+    .header-menu:hover .dropdown-child {
+        display:block;
+        text-align: left;
+    }
+    .header-menu {
+        display: block;
+        width: 65%;
+        margin: 15px 17px 0 0 ;
+        text-align: right;
+    }
+    .menu_item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        cursor:pointer;
+    }
+    .menu_item-description{
+        flex-direction: column;
+        text-align: left;
+    }
+      
+    .menu_item-description a{
+        text-align: left;
+        font-family: "Gilroy SemiBold";
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+    }
+
 }
  @media (max-width:1250px) {
     .placess {
