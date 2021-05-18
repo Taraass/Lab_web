@@ -26,6 +26,16 @@ header {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
+.video video {
+    width: 100%;
+}
+.picture_main {
+    background-size:cover; 
+    height: 0px;
+    position: relative; 
+    background-image: url("./img/Sydney+Opera+House.jpg");  
+    background-repeat: no-repeat;
+}
 .picture {
     background-size:cover; 
     height: 800px;
@@ -238,9 +248,9 @@ h1 {
 h3 {
     line-height: 3em;
     font-weight: bold;
-    width: 1000px;
+    width: 90%;
     height: 120px;
-    margin-left: 100px;
+    margin-left: 10%;
     margin-top: 100px;
 }
 .image1_facts img {
@@ -275,8 +285,51 @@ h3 {
     line-height: 30px;
     margin: 50px 0 50px 30px;
 }
+.contact-form h2 {
+    text-align: center;
+}
+.contact-form {
+    width: 30%;
+    justify-content: center;
+    margin-left: 35%;
+    margin-bottom: 20px;
+    
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical 
+}
+  
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #307533;
+  }
+  
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    }
 
 @media (max-width:900px) {
+    .video {
+        display: none;
+    }
     .imgg {
         display: none;
     }
@@ -291,6 +344,10 @@ h3 {
         margin-top: 12px;
         width: 90px;
         height: 45px;
+    }
+    .contact-form {
+        width: 70%;
+        margin-left: 15%;
     }
     .left-part-footer {
         width: 50%;
@@ -323,6 +380,12 @@ h3 {
     .places {
         padding-top: 10px;
         height: 60px;
+    }
+    .picture_main {
+        height: 400px;
+        background-size:cover; 
+        position: relative; 
+        background-image: url("./img/Sydney+Opera+House2.jpg");  
     }
     .picture {
         height: 400px;
